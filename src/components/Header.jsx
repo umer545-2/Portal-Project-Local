@@ -3,16 +3,15 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <header>
-      <h1>LOGO</h1>
+      {/* Replace the text "LOGO" with an image */}
+      <img src="/path-to-your-logo.png" alt="Logo" style={{ height: '50px' }} />
+
       <ul>
         <li>
-            <Link to="/">Home</Link>
+          <Link to="/login">Login</Link>
         </li>
         <li>
-            <Link to="/about">About</Link>
-        </li>
-        <li>
-            <Link to="/contact">Contact</Link>
+          <Link to="/register">Register</Link>
         </li>
       </ul>
     </header>
