@@ -1,0 +1,41 @@
+.header {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+
+    .inner {
+        max-width: 1240px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .link-group {
+            display: flex;
+            align-items: center;
+
+            .link {
+                  &::after{
+                    content: '';
+                    
+                  }  
+                a {
+                    color: navy;
+                    font-size: 50px;
+                    font-weight: 800;
+                    text-decoration: line-through;
+                    transition: all 500ms;
+
+                    &:hover {
+                        background-color: red;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,18 +1,20 @@
 import { Link } from "react-router-dom";
-
+import logosva from "../assets/images/logosva.png"
 export default function Header() {
   return (
-    <header>
-      <img src="/path-to-your-logo.png" alt="Logo" style={{ height: '50px' }} />
+    <div className="header">
+      <div className="inner">
+        <img src={logosva} alt="Logo"/>
 
-      <ul>
-        <li>
-          <Link to="/login">Login</Link>
-        </li>
-        <li>
-          <Link to="/register">Register</Link>
-        </li>
-      </ul>
-    </header>
+        <div className="link-group">
+          <div className="login-link link">
+            <Link to="/login">Login</Link>
+          </div>
+          <div className="register-link link">
+            <Link to="/register">Register</Link>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
